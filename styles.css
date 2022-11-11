@@ -1,0 +1,33 @@
+:root{
+    --letra_clasica: 'Press Start 2P', cursive;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 200px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-board {
+  border: solid 2px;
+}
+ 
+.play-button {
+  background-color: #631f5f;
+  font-size: 16px;
+  font-family: var(--letra_clasica);
+  color: rgb(196, 255, 204);
+  padding: 20px 30px;
+  border: 3px solid black;
+  cursor: pointer;
+
+}
+
+p, h1{
+    font-family: var(--letra_clasica);
+}
