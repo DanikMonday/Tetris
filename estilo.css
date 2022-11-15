@@ -1,0 +1,14 @@
+/*se declara variable de tipografia 2p*/
+:root{
+    --letra_clasica: 'Press Start 2P', cursive;
+}
+
+/*se llama selector diseño global body*/
+/*el selector llama ciertas propiedades y valores para la pagina principal*/
+body{
+    background-image: url(/img/image1.jpg);
+    height: 300px; 
+    width: 1200px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
