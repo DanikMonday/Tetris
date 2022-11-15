@@ -6,9 +6,60 @@
 /*se llama selector diseño global body*/
 /*el selector llama ciertas propiedades y valores para la pagina principal*/
 body{
-    background-image: url(/img/image1.jpg);
+    background-image: url(images1/image1.jpg);
     height: 300px; 
     width: 1200px;
     background-repeat: no-repeat; 
     background-size: cover; 
+}
+
+/*Propiedades y valores que va a tomar  al contenedor principal*/
+.principalv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    width: 500px;
+}
+
+/*contenedor que llama al selector clase */
+.principalv h1{
+    font-family: var(--letra_clasica);
+    font-size: 60px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/*selector clase, se llama para hacer una caja de texto para que tenga propiedades y valores de diseño*/
+#usuariov{
+    display:block;
+    text-align: left;
+    padding-right:20px ;
+    font-size: 50px;
+    margin-bottom: 20px;
+    width:240px;
+    height: 50px;
+    line-height: 100px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/* selector clase, se llama para que el boton tenga propiedades y valores de diseño*/
+.botonv{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: var(--letra_clasica);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: black;
+    border: 4px solid #40b9ff;
+}
+
+/*selecto clase, donde el usuario acerca el cursor cambia de color azul mas oscuro*/
+.botonv:hover{
+    border: 4px solid #0093e9;
 }
