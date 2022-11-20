@@ -16,7 +16,7 @@
 .game-board {
   border: solid 2px;
 }
- 
+
 .play-button {
   background-color: #631f5f;
   font-size: 16px;
@@ -30,4 +30,8 @@
 
 p, h1{
     font-family: var(--letra_clasica);
+}
+
+#game-canvas{
+  border: 2 solid #000;
 }
