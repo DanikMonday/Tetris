@@ -1,5 +1,15 @@
-var canvas = document.getElementById("board");
+const canvas = document.getElementById('board');
+const ctx = canvas.getContext('2d');
 
 const COLS = 10;
 const ROWS = 20;
 const BLOCK_SIZE = 30
+
+//main.js
+
+// Calculate size of canvas from constants.
+ctx.canvas.width = COLS * BLOCK_SIZE;
+ctx.canvas.height = ROWS * BLOCK_SIZE;
+
+// Scale blocks
+ctx.scale(BLOCK_SIZE, BLOCK_SIZE);
