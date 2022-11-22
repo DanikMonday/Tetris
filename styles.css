@@ -85,23 +85,23 @@
     font-family: var(--letra_clasica);
   }
 
-  #board{
+  .board{
     background-color: rgb(0, 0, 0);
-    width: 600px;
-    height: 800px;
+    /* width: 600px;
+    height: 700px; */
     margin: 20px;
     border: 6px solid #32B5FF;
     border-style: dashed dashed;
     margin-top: -20px;
   }
 @media (max-width: 834px) { 
-  #board{
+  .board{
     margin-left: 10px;
   }
 }
 
 @media (max-width: 390px) { 
-  #board{
+  .board{
     width: 320px;
     height: 425px;
     margin: 20px;
@@ -253,7 +253,7 @@
     
   }
   .level_num{
-    font-size: 45px;
+    font-size: 25px;
   }
 
   @media (min-width:834px) { 
