@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--se referencia la tipografia por medio de la pagina google fonts-->
+    <title>Tetris-combi</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!--se referencia el documento de hojas de estilos a la vista-->
-    <link rel="stylesheet" href="estilo.css">
-    <title>Vista-Principal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Contenedor principal de los elementos de la pagina principal -->
-    <div class="principalv">
-        <h1>Tetris</h1>
-        <input type="text" id="usuariov" placeholder="user"></span>
-        <a href="#"><button class="botonv">start</button></a>
+
+    <div class="grid">
+        <div class="left-column">
+            <div>
+                <h1 id="titulo-mob">TETRIS</h1>
+                <h1 class="player_num">Player 1</h1>
+            </div>
+            <canvas id="next" class="next"></canvas>
+            <div class="level" id="level-tab">
+                <!-- <h2 id = "scoreboard">Score</h2>
+                <p id = "scoreboard" class="level_num">0</p> -->
+            </div>
+
+            <div class="lines" id="lines-tab">
+                <p>Lines</p>
+                <p>19</p>
+            </div>
+        </div>
+        <div class="center_column">
+            <h1 class="titulo">TETRIS</h1>
+            <canvas id="game-canvas" class="game-board board" width="600" 
+            height="700">
+                
+            </canvas>
+        </div>
+
+        <div class="right-column">
+              <div class="level">
+                <h2 class="level_num">Score</h2>
+                <p id = "scoreboard" class="level_num">0</p>
+              </div>
+
+              <div class="lines">
+                <p>Lines</p>
+                <p id="linesboard">0</p>
+              </div>
+            <!-- <button onclick="play()" class="play-button">Play</button>    -->
+        </div>
     </div>
-<script src="intercat.js"></script>
+    <script src="intercat.js"></script>
 </body>
 </html>
